@@ -1,0 +1,5 @@
+Harrison Walker, Eric Jiang
+
+Program works as intended. The only minor issue is that our inputs (known as items in our documents) cannot have spaces in them. This affects the given values for status. Paid is paid, but not paid is unpaid.
+
+Note: If this does not compile for you, try making your own codeblocks project using the .h and .cpp files. Our team has noticed that the codeblocks project sometimes doesn't work between users properly, but the code itself does.

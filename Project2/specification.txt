@@ -1,0 +1,173 @@
+Viewer
+
+
+SPECIFICATION
+
+
+OVERVIEW
+
+A simple team organizer that allows the user view and store a season and the players.  
+
+
+DETAILS
+
+The program interacts with the user as shown in the following example:
+
+The main view:
+
+
+Commands:
+
+1) Start a new season
+2) Add a player
+3) Search for players
+4) Print a list of players
+5) Display statistics
+6) Stop the program
+
+Command:
+
+
+On first load the program asks the user for a year.  This is the year for this season.
+
+On load gets players' information from the save file.
+
+The main view lists 6 commands that you can use. Here is a description of the main view commands:
+
+	Start a new season: Asks the user for a new year and wipes all previous data. Asks user for confirmation beforehand.
+
+	Add a player: Sequentailly asks the user for Last Name, First Name, Year of Birth, and Registration Status. Checks year of birth and registration status to see if they are valid.
+
+	Search for players: Goes to the search screen, where the user is given instructions on how to search. 
+
+	Print a list of players: Asks the user for a filename and then prints the year and all the players' information in order of category and last name to the given file.
+
+	Display statistics: Goes to the statistics view.
+
+	Stop the program: Saves the year and all the players' information to a save file and quits the program.
+	
+	
+The search view:
+
+
+Items: First Name, Last Name, Keyword, Year of Birth, Registration Status, Category
+
+Names must be exact, Keyword is any sequence of characters in a name
+
+Year of Birth should be a four digit number, Registration Status must be exact
+
+Category should be a 'U' followed by a number
+
+Each item should be entered in order. If you do not want to enter an item, use a '-'
+
+Search:
+
+
+There are 6 items, all of which must be entered in order. The user can enter any value they want for any item. 
+
+If they do not want to search for a certain item, they can enter a '-' to skip the search for that item. 
+
+Once all 6 items have been entered, the program will go to the search results screen if any players meeting all criteria were found
+
+Will print out a message saying no players were found if none were found and returns to the main view.
+
+
+The search results view:
+
+
+Player 1 out of 3
+
+Name: Jiang, Eric
+Year of Birth: 2014
+Registration Status: paid
+Category: U6
+
+Commands:
+1) Search for players
+2) Move to next player
+3) Move to previous player
+4) Edit a player's information
+5) Print a list of players
+6) Exit the search results view
+7) Stop the program
+
+
+The number of players and the currently viewed player are shown at the top.
+
+The players information is then shown on four lines.
+
+Then are the list of commands. The program is currently waiting for the user to enter one.
+
+Commands:
+
+	Search for players: Same as main view, goes to search view.
+	
+	Move to next player: Displays the next player. Will loop around.
+	
+	Move to previous player: Displays the previous player. Will loop around.
+	
+	Edit a player's information: Goes to the edit view.
+	
+	Print a list of players: Asks the user for a filename, and then prints all the players in this search to that file in order of last name.
+	
+	Exit the search results view: Returns to the main view.
+	
+	Stop the program: Same as main view, saves all data and quits.
+
+
+The edit view:
+
+Eric Jiang 2014 paid
+
+1) Change first name
+2) Change last name
+3) Change birth year
+4) Change status
+5) Done
+
+Change:
+
+
+Displays the current information for that palyer at the top.
+
+Gives a list of commands.
+
+Commands:
+
+	Change first name: Asks for a new first name.
+	
+	Change last name: Asks for a new last name.
+	
+	Change birth year: Asks for a new birth year. Automatically computes new category. Checks to see that the year is valid.
+	
+	Change status: Asks for a new status. Checks to see that the status is valid.
+	
+	Done: Returns to search results view, viewing the edited player.
+	
+
+The statistics view:
+
+Total Players: 2
+
+U8:
+paid: 1
+unpaid: 0
+
+U17:
+paid: 1
+unpaid: 0
+
+Enter any Character to Continue
+
+
+Shows total number of players at the top.
+
+For each category, shows the number of players that have paid and the number that haven't.
+
+Once user is ready the porgram returns to the main view.
+
+
+
+NOTES FOR LATER VERSIONS
+
+Implement better code seperation. Example, class for everything to deal with searching.

@@ -1,0 +1,35 @@
+# depslib dependency file v1.0
+1588116886 source:d:\documents\c++ code\project2\cs142project2\project2\buffer.cpp
+	<iostream>
+
+1588116976 source:d:\documents\c++ code\project2\cs142project2\project2\testdriver.cpp
+	<iostream>
+
+1588117006 source:d:\documents\c++ code\project2\cs142project2\project2\viewer.cpp
+	<iostream>
+
+1588117006 source:d:\documents\c++ code\project2\cs142project2\project2\person.cpp
+	<iostream>
+
+1588117006 source:d:\documents\c++ code\project2_\project2\person.cpp
+	<iostream>
+
+1588372499 source:d:\documents\c++ code\project2_\project2\viewer.cpp
+	"Viewer.h"
+
+1588191081 source:d:\documents\c++ code\project2_\project2\testdriver.cpp
+	<iostream>
+	"Viewer.h"
+
+1588371738 d:\documents\c++ code\project2_\project2\viewer.h
+	<iostream>
+	<map>
+	<cstdlib>
+	<sstream>
+	<fstream>
+	<vector>
+	"Person.h"
+
+1588190143 d:\documents\c++ code\project2_\project2\person.h
+	<iostream>
+

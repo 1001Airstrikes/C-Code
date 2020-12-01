@@ -1,0 +1,97 @@
+Viewer
+
+
+DESIGN DOCUMENT
+
+
+COMPONENT: class Viewer
+
+A simple team organizer.  See program specification for details.
+
+Public methods:
+
+o void run()
+
+    Runs the viewer.  
+    
+o void execute_r(const char & c)
+o void execute_s(const char & c, int & n, const int & t, std::map<std::string, Person>::iterator & i)
+o void execute_e(const char & c, int & n, std::map<std::string, Person>::iterator & i)
+
+    Fields the different commands for the different views.  
+    
+o void add_player()
+
+    Adds a player to the team.
+	
+o void get_stats(int category)
+
+    Displays the stats of the team.  
+	
+o void search_p()
+
+    Does some of the work for searching the team before delegating to the other search methods.  
+	
+o void search_ln(const std::string & s)
+o void search_fn(const std::string & s)
+o void search_k(const std::string & s)
+o void search_y(const std::string & s)
+o void search_s(const std::string & s)
+o void search_c(const std::string & s)
+
+	Other search methods that search for a certian item.
+    
+o void print_to_file(std::ofstream & file)
+
+    Prints all players to a given file in order of category and last name.  
+    
+o void print_s(std::ofstream & file)
+
+    Same as print_to_file but only prints the players in the search results and only prints in order of last name.  
+    
+o void display()
+
+    Displays the search results.  
+    
+o void next(int & n, const int & t, std::map<std::string, Person>::iterator & i)
+o void previous(int & n, const int & t, std::map<std::string, Person>::iterator & i)
+
+    Changes which player is displayed by 1.  
+    
+o void edit(int & n, std::map<std::string, Person>::iterator & i)
+
+    Opens the edit view.  
+    
+o void edit_f(const std::map<std::string, Person>::iterator & i)
+o void edit_l(std::map<std::string, Person>::iterator & i)
+o void edit_y(const std::map<std::string, Person>::iterator & i)
+o void edit_s(const std::map<std::string, Person>::iterator & i)
+
+    Overwrites a certain item. Error checks.  
+    
+
+
+
+COMPONENT: class Person
+
+A person for Viewer. Holds all of a person's information.
+
+Public variables:
+          
+o std::string fname_
+
+    Stores a person's first name.
+	
+o std::string category_
+
+    Stores a person's category.
+	
+o int year_
+
+    Stores a person's birth year.
+
+o std::string status_
+
+    Stores a person's payment status.
+
+             
